@@ -1,0 +1,10 @@
+def sum_input_numbers():
+    numbers = input("Enter numbers separated by spaces: ").split()
+    try:
+        numbers = [float(num) for num in numbers]
+        total = sum(numbers)
+        print("The sum of the numbers is:", total)
+    except ValueError:
+        print("Invalid input. Please enter numbers separated by spaces.")
+
+sum_input_numbers()
