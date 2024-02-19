@@ -1,0 +1,5 @@
+import random
+lower = int(input("Enter lower bound: "))
+upper = int(input("Enter upper bound: "))
+random_number = random.randint(lower, upper)
+print("Random number between", lower, "and", upper, ":", random_number)
