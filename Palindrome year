@@ -1,0 +1,8 @@
+def is_palindrome_year(year):
+    return str(year) == str(year)[::-1]
+
+input_year = int(input("Enter a year: "))
+if is_palindrome_year(input_year):
+    print("Palindrome Year")
+else:
+    print("Not a Palindrome Year")
