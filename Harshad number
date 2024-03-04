@@ -1,0 +1,8 @@
+def is_harshad_number(num):
+    return num % sum(int(digit) for digit in str(num)) == 0
+
+num = int(input("Enter a number: "))
+if is_harshad_number(num):
+    print("Harshad Number")
+else:
+    print("Not a Harshad Number")
