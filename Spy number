@@ -1,0 +1,13 @@
+def is_spy_number(num):
+    digits = [int(digit) for digit in str(num)]
+    product = 1
+    sum_of_digits = sum(digits)
+    for digit in digits:
+        product *= digit
+    return product == sum_of_digits
+
+num = int(input("Enter a number: "))
+if is_spy_number(num):
+    print("Spy Number")
+else:
+    print("Not a Spy Number")
